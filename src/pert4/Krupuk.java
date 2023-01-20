@@ -7,7 +7,9 @@ public class Krupuk extends Product {
 	private String nama;
 	private int harga;
 	private Double berat, modal;
-
+	
+	
+	
 //	Shortcut membuat setter dan getter, caranya alt + shift + s + r
 	
 	//Getter
@@ -17,13 +19,15 @@ public class Krupuk extends Product {
 	
 	int getHarga() {
 		return harga;
+		
 	}
 	
 	Double getBerat() {
 		return berat;
+
 	}
 
-	Double getModal(String pass) {
+	public Double getModal(String pass) {
 		if (pass.equals("Password")) {
 			return modal;
 		} else {
@@ -32,7 +36,7 @@ public class Krupuk extends Product {
 	}
 	
 	//Setter
-	void setNama(String nama) {
+	public void setNama(String nama) {
 		this.nama = nama;
 	}
 	
@@ -62,6 +66,8 @@ public class Krupuk extends Product {
 	//Constructor dengan parameter
 //	Untuk debugging
 	public Krupuk(String Testing) {
+		
+		
 		
 		// TODO Auto-generated constructor stub
 		System.out.println("String yang anda masukan adalah " + Testing);
@@ -97,11 +103,7 @@ public class Krupuk extends Product {
 	@Override
 	public void isBaverage() {
 		// TODO Auto-generated method stub
-		if (this.getBaverage()) {
-			System.out.println("Ini minuman");
-		} else {
-			System.out.println("ini bukan minuman, ini adalah " + this.nama);
-		}
+		System.out.println("ini bukan minuman, ini adalah " + this.nama);
 	}
 
 

@@ -12,7 +12,7 @@ public class Minuman extends Product{
 		this.namaProduct = namaProduct;
 	}
 	
-	public void displayDetail() {
+	void displayDetail() {
 		System.out.println("nama product : " + this.namaProduct);
 		System.out.println("Harga product : " + this.harga);
 		System.out.println("vendor product : " + this.vendor);
@@ -24,11 +24,7 @@ public class Minuman extends Product{
 	@Override
 	public void isBaverage() {
 		// TODO Auto-generated method stub
-		if (this.getBaverage()) {
-			System.out.println("Ini minuman, ini adalah " + this.namaProduct);
-		} else {
-			System.out.println("ini bukan minuman");
-		}
+		System.out.println("Ini minuman, ini adalah " + this.namaProduct);
 	}
 
 }

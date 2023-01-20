@@ -10,7 +10,7 @@ public abstract class Product {
 		
 	}
 	
-	public Product(String vendor, boolean baverage, Double harga) {
+	public Product(String vendor, boolean baverage, Double	 harga) {
 		this.vendor = vendor;
 		this.baverage = baverage;
 		this.harga = harga;

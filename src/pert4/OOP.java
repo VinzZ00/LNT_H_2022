@@ -28,6 +28,12 @@ public class OOP {
 		Class itu ada 2 secara teknikal
 		Class biasa, dan Class abstract 
 	3. Polymorph
+	   method yang sama namun bisa memiliki behavior yang berbeda (konsep untuk method)
+	   - Override
+	    - menganti body yang ada di suatu method yang sudah (ini terjadi di kelas yang berbeda, namun memiliki method yang namanya sama dan asal method tersebut berasal dari parent class yang sama);
+	   - Overload
+	    - menganti body yang ada di suatu method yang sudah ada (ini itu berada di satu kelas yang sama)
+	   
 	*/
 	public void UnOOP() {
 		Object[] item = new Object[3];
@@ -54,6 +60,9 @@ public class OOP {
 		kusuka.setNama("Kusuka");
 		kusuka.setBerat(100.5);
 		kusuka.setModal(2000.0);
+		//Lower and Upper casting (pake TypeCast)
+		
+		System.out.println();
 		
 		System.out.println();
 		kusuka.displayDetail("lays", 3000, 100.5);
@@ -62,6 +71,7 @@ public class OOP {
 		System.out.println();
 		Krupuk chitato = new Krupuk("Chitato", 5000, 30.1, 3000D, "Terserah", false); 
 		chitato.displayDetail("", 0, 0);
+		
 		System.out.println("\n==========================\n");
 		Minuman pocari = new Minuman("Minuman isotonik", "Pocari", "Otsuka", 7000);
 		pocari.displayDetail();
